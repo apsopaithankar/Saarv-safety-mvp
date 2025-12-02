@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Saarv Safety MVP</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header><h1>Saarv — Safety MVP</h1></header>
+  <main>
+    <section id="report-form">
+      <h2>Report a Safety Observation</h2>
+      <form id="obsForm">
+        <label>Location<input name="location" required /></label>
+        <label>Observed (short)<input name="text" required /></label>
+        <label>Severity<select name="severity">
+          <option>Low</option><option>Medium</option><option>High</option>
+        </select></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="list">
+      <h2>Observations</h2>
+      <ul id="observations"></ul>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div id="counts">Loading…</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
