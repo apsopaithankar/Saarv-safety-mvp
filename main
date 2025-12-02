@@ -1,0 +1,6 @@
+/ (root)
+  README.md
+  index.html
+  style.css
+  app.js
+  data/observations.json   ← (optional starter file)
